@@ -1,0 +1,13 @@
+/Sublime_Text*/Others/
+/Sublime_Text*/Data/Index/
+/Sublime_Text*/Data/Cache/
+/Sublime_Text*/Data/Local/
+/Sublime_Text*/Data/Packages/Uesr/Package Control.cache/
+/Sublime_Text*/changelog.txt
+/tools
+*.cache
+*.sublime_session
+*.sublime_license
+*.last-run
+*.sublime-build
+license.bat

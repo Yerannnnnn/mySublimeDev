@@ -1,0 +1,26 @@
+[
+  {
+    "caption": "Cmd Caller: Default Action",
+    "command": "cmd_caller_default"
+  },
+  {
+    "caption": "Cmd Caller: App List",
+    "command": "cmd_caller_list"
+  },
+  {
+    "caption": "Preferences: Cmd Caller: Settings",
+    "command": "cmd_caller_edit_settings"
+  },
+  {
+    "caption": "Preferences: Cmd Caller: Key Bindings",
+    "command": "cmd_caller_edit_key_bindings"
+  },
+  {
+    "caption": "Cmd Caller: Show Logs",
+    "command": "cmd_caller_load_logs"
+  },
+  {
+    "caption": "Cmd Caller: Show Last Logs",
+    "command": "cmd_caller_load_last_logs"
+  }
+]

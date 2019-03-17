@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"C++ Snippets",
+		"Clang Format",
+		"CMake",
+		"CMakeEditor",
+		"CMakeFormat",
+		"CMakeSnippets",
+		"cmd-caller",
+		"Compare Side-By-Side",
+		"Console Wrap",
+		"CUDA C++",
+		"CUDA Snippets",
+		"Insert Nums",
+		"MarkdownEditing",
+		"MarkdownTOC",
+		"More Layouts",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"PackagesUI",
+		"PlainTasks",
+		"Pywin32",
+		"Seti_UI",
+		"Seti_UX",
+		"SideBarEnhancements",
+		"SystemVerilog",
+		"TodoReview",
+		"Verilog",
+		"Verilog Automatic",
+		"VHDL"
+	]
+}

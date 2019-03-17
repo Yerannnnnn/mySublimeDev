@@ -1,0 +1,1 @@
+{"version": "0.2.2", "dependencies": [], "url": "https://github.com/esphas/cmd-caller", "sublime_text": ">=3000", "description": "A Sublime Text 3 plugin to execute predefined commands conveniently.", "platforms": ["*"]}

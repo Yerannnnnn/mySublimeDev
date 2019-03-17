@@ -1,0 +1,30 @@
+[
+    //common
+    { "keys":["f1"           ],"command":"build"                   } ,
+    { "keys":["ctrl+q"       ],"command":"goto_definition" } ,
+    { "keys":["ctrl+shift+q" ],"command":"jump_back"                   } ,
+    { "keys":["ctrl+alt+p"   ],"command":"prompt_select_workspace" } ,
+    { "keys":["ctrl+alt+a"   ],"command": "cmake_format" },
+    {"keys": ["alt+m"        ], "command": "display_diagrams"},
+    //AlignTab
+    {"keys":["ctrl+alt+3"   ],"command":"align_tab","args" : {"user_input" : "#"               }},
+    {"keys":["ctrl+alt+4"   ],"command":"align_tab","args" : {"user_input" : "$/f"             }},
+    {"keys":["ctrl+alt+7"   ],"command":"align_tab","args" : {"user_input" : "&"               }},
+    {"keys":["ctrl+alt+8"   ],"command":"align_tab","args" : {"user_input" : "*"               }},
+    {"keys":["ctrl+alt+9"   ],"command":"align_tab","args" : {"user_input" : "("               }},
+    {"keys":["ctrl+alt+0"   ],"command":"align_tab","args" : {"user_input" : ")"               }},
+    {"keys":["ctrl+alt+="   ],"command":"align_tab","args" : {"user_input" : "=/f"             }},
+    {"keys":["ctrl+alt+["   ],"command":"align_tab","args" : {"user_input" : ["[/f","]/f"]     }},
+    {"keys":["ctrl+alt+]"   ],"command":"align_tab","args" : {"user_input" : ["{/f","}/f"]     }},
+    {"keys":["ctrl+alt+;"   ],"command":"align_tab","args" : {"user_input" : ":"               }},
+    {"keys":["ctrl+alt+,"   ],"command":"align_tab","args" : {"user_input" : ","               }},
+    {"keys":["ctrl+alt+."   ],"command":"align_tab","args" : {"user_input" : "=>/f"            }},
+    {"keys":["ctrl+alt+/"   ],"command":"align_tab","args" : {"user_input" : "///f"            }},
+    {"keys":["ctrl+alt+\\"  ],"command":"align_tab","args" : {"user_input" : "\\|"             }},
+    {"keys":["ctrl+alt+'"   ],"command":"align_tab","args" : {"user_input" : "\"/f"            }},
+    //markdown
+    {
+        "keys": ["ctrl+alt+shift+o"], "command": "omni_markup_export",
+        "context": [{"key": "omnimarkup_is_enabled", "operator": "equal", "operand": ""}]
+    }
+]

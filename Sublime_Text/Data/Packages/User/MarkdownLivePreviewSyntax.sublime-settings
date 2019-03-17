@@ -1,0 +1,14 @@
+// These settings override both User and Default settings for the MarkdownLivePreviewSyntax syntax
+{
+    "color_scheme": "Packages/User/tmTheme/MarkdownEditor-Dark.tmTheme",
+    "gutter": false,
+    "show_menus": false,
+    "show_tabs": false,
+    "show_minimap": false,
+    "show_side_bar": false,
+    "gutter": false,
+    "rulers": [],
+    "word_wrap": true,
+    "wrap_width": 0,
+    "line_padding_top": 0,
+}

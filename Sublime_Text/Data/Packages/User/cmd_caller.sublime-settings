@@ -1,0 +1,29 @@
+{
+  "windows": {
+    "default": "Cmder",
+    "apps": {
+      "Cmder": {
+         "name": "Run Cmder Here",
+         "cmd": "D:\\01_tools\\cmder\\Cmder.exe \"${file_path}\""
+       },
+       "Gitbash": {
+          "name": "Run Git-bash Here",
+          "cmd": "C:/Program Files/Git/git-bash.exe --cd=\"${file_path}\""
+        },
+
+       "CMD": {
+          "name": "Run cmd.exe Here",
+          "cmd": "cmd.exe /s /k pushd \"${file_path}\""
+        }
+    }
+  },
+  "linux": {
+    "default": "Bash",
+    "apps": {
+      "Bash": {
+        "name": "Bash Here",
+        "cmd": "gnome-terminal --working-directory=${file_path}"
+      },
+    }
+  },
+}

@@ -1,0 +1,13 @@
+// These settings override both User and Default settings for the Plain text syntax
+// These settings override both User and Default settings for the PlainTasks syntax
+
+{
+
+  "color_scheme": "Packages/PlainTasks/tasks-dark.hidden-tmTheme",
+    "font_options":
+    [
+        "directwrite",
+        "antialias",
+        "subpixel_antialias"
+    ],
+}

@@ -1,0 +1,11 @@
+[
+    { "caption": "新建文件夹", "command": "new_folder", "args": {"dirs": []} },
+    { "caption": "-", "id": "folder_commands" },
+    // { "caption": "打开文件夹(E)" ,"command": "open_dir", "args": {"dir": "$file_path"}, "mnemonic": "E" },
+    { "caption": "打开所在文件夹(E)", "command": "open_containing_folder", "args": {"files": []} },
+    { "caption": "删除文件(D)", "command": "delete_file", "args": {"files": []} , "mnemonic": "D"},
+    { "caption": "新建文件(N)", "command": "new_file_at", "args": {"dirs": []} , "mnemonic": "N"},
+    { "caption": "重命名(R)", "command": "rename_path", "args": {"paths": []} , "mnemonic": "R"},
+	{ "caption": "删除文件夹", "command": "delete_folder", "args": {"dirs": []} , },
+	// { "caption": "在文件夹中查找…", "command": "find_in_folder", "args": {"dirs": []} },
+]

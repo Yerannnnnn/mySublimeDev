@@ -1,0 +1,1 @@
+{"version": "1.1.0", "sublime_text": ">=3000", "platforms": ["windows"], "description": "Pywin32 support for sublime (win32api etc)", "url": "https://github.com/SublimeText/Pywin32", "dependencies": []}

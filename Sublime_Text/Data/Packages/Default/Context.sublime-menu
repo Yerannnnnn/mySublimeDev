@@ -1,0 +1,56 @@
+[
+    { "command": "open_context_url", "caption": "打开网址" },
+    { "command": "open_in_browser", "caption": "在浏览器中打开" },
+    { "command": "context_goto_definition", "caption": "转到定义" },
+    { "caption": "-", "id": "clipboard" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "打开文件夹(E)","mnemonic": "E", },
+    { "command": "copy_path", "caption": "复制文件路径（C）" , "mnemonic": "C",},
+    { "command": "reveal_in_side_bar", "caption": "在侧边栏中显示" },
+    {
+        "caption": "整理排序",
+        "children":
+        [
+            { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "行排序(S)", "mnemonic": "S" },
+            { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "行排序(区分大小写)" },
+            { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "整理行-逆序" },
+            { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "整理行-去重复" },
+            { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "整理行-随机打乱" },
+            { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "整理选区-排序" },
+            { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "整理选区-排序(区分大小写)" },
+            { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "整理选区-逆序" },
+            { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "整理选区-去重复" },
+            { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "整理选区-随机打乱" },
+        ]
+    },
+    {
+    "caption": "跳转书签",
+    "id": "bookmarks",
+    "children":
+    [
+        { "command": "select_all_bookmarks", "caption": "选择所有书签" },
+        { "caption": "-" },
+        { "command": "select_bookmark", "args": {"index": 0} },
+        { "command": "select_bookmark", "args": {"index": 1} },
+        { "command": "select_bookmark", "args": {"index": 2} },
+        { "command": "select_bookmark", "args": {"index": 3} },
+        { "command": "select_bookmark", "args": {"index": 4} },
+        { "command": "select_bookmark", "args": {"index": 5} },
+        { "command": "select_bookmark", "args": {"index": 6} },
+        { "command": "select_bookmark", "args": {"index": 7} },
+        { "command": "select_bookmark", "args": {"index": 8} },
+        { "command": "select_bookmark", "args": {"index": 9} },
+        { "command": "select_bookmark", "args": {"index": 10} },
+        { "command": "select_bookmark", "args": {"index": 11} },
+        { "command": "select_bookmark", "args": {"index": 12} },
+        { "command": "select_bookmark", "args": {"index": 13} },
+        { "command": "select_bookmark", "args": {"index": 14} },
+        { "command": "select_bookmark", "args": {"index": 15} }
+    ]
+    },
+    { "caption": "书签(T)","command": "toggle_bookmark", "mnemonic": "T", },
+    { "command": "clear_bookmarks", "caption": "清除书签(B)" , "mnemonic": "B",},
+    { "caption": "Git-Bash Here（Q）" , "mnemonic": "Q",
+      "command": "cmd_caller_default", },
+    { "caption": "-", "id": "end" },
+]

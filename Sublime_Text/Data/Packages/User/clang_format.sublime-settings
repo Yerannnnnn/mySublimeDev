@@ -1,0 +1,11 @@
+{
+    "binary": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
+    //     LLVM
+    //     Google
+    //     Chromium
+    //     Mozilla
+    //     WebKit
+    //     Custom
+    "style": "Custom",
+    "format_on_save": true,
+}

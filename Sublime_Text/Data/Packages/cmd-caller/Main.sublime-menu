@@ -1,0 +1,60 @@
+[
+  {
+    "caption": "Tools",
+    "mnemonic": "T",
+    "id": "tools",
+    "children": [
+      {
+        "caption": "Cmd Caller",
+        "children": [
+          {
+            "caption": "Run Default Cmd",
+            "command": "cmd_caller_default"
+          },
+          {
+            "caption": "Select Cmd to Run",
+            "command": "cmd_caller_list"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "caption": "Preferences",
+    "mnemonic": "n",
+    "id": "preferences",
+    "children": [
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "Cmd Caller",
+            "children": [
+              {
+                "caption": "Settings",
+                "command": "cmd_caller_edit_settings"
+              },
+              {
+                "caption": "Key Bindings",
+                "command": "cmd_caller_edit_key_bindings"
+              },
+              {
+                "caption": "-"
+              },
+              {
+                "caption": "Show Logs",
+                "command": "cmd_caller_load_logs"
+              },
+              {
+                "caption": "Show Last Logs",
+                "command": "cmd_caller_load_last_logs"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
