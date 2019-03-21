@@ -40,8 +40,9 @@
 	},
 	{"caption": "-", "id": "side-bar-save-close-views-separator"},
 	{
-		"caption": "Open / Run",
+		"caption": "Open / Run (Q)",
 		"id": "side-bar-open",
+		"mnemonic": "Q",
 		"command": "side_bar_open",
 		"args": {"paths": []}
 	},

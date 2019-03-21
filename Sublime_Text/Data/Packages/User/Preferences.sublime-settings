@@ -105,6 +105,9 @@
 	"detect_indentation": true,
 	"file_exclude_patterns":
 	[
+		"*.rar",
+		"*.zip",
+		"*.tar*",
 		"*.pyc",
 		"*.pyo",
 		"*.dll",
@@ -136,7 +139,7 @@
 		"subpixel_antialias",
 		"no_italic"
 	],
-	"font_size": 12,
+	"font_size": 13,
 	"gpu_window_buffer": true,
 	"highlight_line": false,
 	"hot_exit": true,
