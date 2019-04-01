@@ -8,4 +8,5 @@
     //     Custom
     "style": "Custom",
     "format_on_save": true,
+    "languages": ["C", "C++", "C++11", "Objective-C", "Objective-C++"]
 }
