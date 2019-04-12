@@ -17,6 +17,8 @@
 		"Console Wrap",
 		"CUDA C++",
 		"CUDA Snippets",
+		"Hex to Int Preview",
+		"hextoASCII",
 		"Insert Nums",
 		"MarkdownEditing",
 		"MarkdownTOC",
@@ -32,6 +34,7 @@
 		"SystemVerilog",
 		"Terminus",
 		"TodoReview",
+		"Unicode Escape",
 		"Verilog",
 		"Verilog Automatic",
 		"VHDL"

@@ -155,6 +155,7 @@
        "SplitEmptyNamespace":    false
     },
 
+
     // Break after each annotation on a field in Java files.
 "BreakAfterJavaFieldAnnotations": true,
 
@@ -196,7 +197,7 @@
 
     // Always break constructor initializers before commas and align the commas
     // with the colon.
- "BreakConstructorInitializersBeforeComma": true,
+ "BreakConstructorInitializersBeforeComma": false,
 
 
  "BreakStringLiterals": true,

@@ -1,1 +1,1 @@
-{"version": "4.4.3", "platforms": ["*"], "url": "https://github.com/ctf0/Seti_UX", "sublime_text": "*", "dependencies": [], "description": "Seti Improved Scheme/Syntax-HL for ST."}
+{"dependencies": [], "url": "https://github.com/ctf0/Seti_UX", "version": "4.4.4", "sublime_text": "*", "platforms": ["*"], "description": "Seti Improved Scheme/Syntax-HL for ST."}

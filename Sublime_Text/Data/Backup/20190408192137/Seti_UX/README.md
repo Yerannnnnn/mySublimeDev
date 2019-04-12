@@ -1,8 +1,7 @@
-<h1 align="center" style="border: none">
-    Seti_UX
-    <br>
-    <a href="https://packagecontrol.io/packages/Seti_UX/"><img src="https://img.shields.io/packagecontrol/dt/Seti_UX.svg" alt="Packagecontrol total downloads" /></a>
-</h1>
+# Seti_UX
+
+[![Packagecontrol total downloads](https://img.shields.io/packagecontrol/dt/Seti_UX.svg)](https://packagecontrol.io/packages/Seti_UX/)
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/16ri7Hh848bw7vxbEevKHFuHXLmsV8Vc9L)](https://en.cryptobadges.io/donate/16ri7Hh848bw7vxbEevKHFuHXLmsV8Vc9L)
 
 Seti Improved Scheme/Syntax-HL for ST.
 

@@ -103,6 +103,7 @@
 	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		"*.rar",
@@ -146,6 +147,7 @@
 	"ignored_packages":
 	[
 		"CUDA C++",
+		"hextoASCII",
 		"Markdown",
 		"MarkdownTOC",
 		"Vintage"
