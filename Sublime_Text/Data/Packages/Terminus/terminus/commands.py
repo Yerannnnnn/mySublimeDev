@@ -113,16 +113,15 @@ class TerminusOpenCommand(sublime_plugin.WindowCommand):
 
         st_vars = self.window.extract_variables()
 
-        if not config_name and not cmd:
+        if config_name == "<ask>":
             self.show_configs()
             return
 
         if config_name:
             config = self.get_config_by_name(config_name)
         else:
-            config = {
-                "name": "Terminus"
-            }
+            config = self.get_config_by_name("Default")
+
         if cmd:
             config["cmd"] = cmd
         if env:
@@ -182,9 +181,6 @@ class TerminusOpenCommand(sublime_plugin.WindowCommand):
         if not os.path.isdir(cwd):
             raise Exception("{} does not exist".format(cwd))
 
-        if not title:
-            title = config["name"]
-
         # pre_window_hooks
         for hook in pre_window_hooks:
             self.window.run_command(*hook)
@@ -198,6 +194,7 @@ class TerminusOpenCommand(sublime_plugin.WindowCommand):
         terminus_view.run_command(
             "terminus_activate",
             {
+                "config_name": config["name"],
                 "cmd": cmd,
                 "cwd": cwd,
                 "env": _env,
@@ -311,7 +308,11 @@ class TerminusOpenCommand(sublime_plugin.WindowCommand):
             }
         else:
             if "SHELL" in os.environ:
-                cmd = [os.environ["SHELL"], "-i", "-l"]
+                shell = os.environ["SHELL"]
+                if os.path.basename(shell) == "tcsh":
+                    cmd = [shell, "-l"]
+                else:
+                    cmd = [shell, "-i", "-l"]
             else:
                 cmd = ["/bin/bash", "-i", "-l"]
 
@@ -378,6 +379,9 @@ class TerminusViewEventListener(sublime_plugin.EventListener):
 
         settings = view.settings()
         if not settings.has("terminus_view.args") or settings.get("terminus_view.detached"):
+            return
+
+        if settings.has("terminus_view.closed"):
             return
 
         kwargs = settings.get("terminus_view.args")
@@ -492,6 +496,9 @@ class TerminusInitializeCommand(sublime_plugin.TextCommand):
         view_settings.set("__vi_external_disable", True)
         for key, value in terminus_settings.get("view_settings", {}).items():
             view_settings.set(key, value)
+        # disable vintage
+        view_settings.set("command_mode", False)
+        view_settings.set("inverse_caret_state", False)
 
 
 class TerminusActivateCommand(sublime_plugin.TextCommand):
@@ -762,9 +769,6 @@ class ToggleTerminusPanelCommand(sublime_plugin.WindowCommand):
 
     def run(self, **kwargs):
         window = self.window
-        if "config_name" not in kwargs:
-            kwargs["config_name"] = "Default"
-
         if "panel_name" in kwargs:
             panel_name = kwargs["panel_name"]
         else:
@@ -919,11 +923,11 @@ class TerminusRenderCommand(sublime_plugin.TextCommand, TerminusViewMixin):
             self.trim_trailing_spaces(edit, terminal)
             self.trim_history(edit, terminal)
             view.run_command("terminus_show_cursor")
-        if screen.title != terminal.title:
-            if screen.title:
-                terminal.title = screen.title
-            else:
-                terminal.title = terminal.default_title
+
+        if terminal.default_title:
+            terminal.title = terminal.default_title
+        elif screen.title != terminal.title:
+            terminal.title = screen.title
 
         # we should not clear dirty lines here, it shoud be done in the eventloop
         # screen.dirty.clear()
@@ -1009,8 +1013,8 @@ class TerminusRenderCommand(sublime_plugin.TextCommand, TerminusViewMixin):
         while row > cursor_row:
             line_region = view.line(view.text_point(row, 0))
             text = view.substr(line_region)
-            if len(text) == 0:
-                self.decolorize_line(row)
+            if len(text.strip()) == 0 and \
+                    (row not in self.colored_lines or len(self.colored_lines[row]) == 0):
                 region = view.line(view.text_point(row, 0))
                 view.erase(edit, sublime.Region(region.begin() - 1, region.end()))
                 row = row - 1

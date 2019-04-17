@@ -175,7 +175,7 @@ class Terminal:
         logger.debug("activating with offset %s", self.offset)
 
     def activate(
-            self, cmd, cwd=None, env=None, title=None,
+            self, config_name, cmd, cwd=None, env=None, title=None,
             panel_name=None, tag=None, auto_close=True):
 
         view = self.view
@@ -186,6 +186,7 @@ class Terminal:
             Terminal._detached_terminals.append(self)
             self.detached = True
 
+        self.config_name = config_name
         self.panel_name = panel_name
         self.tag = tag
         self.auto_close = auto_close
@@ -236,6 +237,10 @@ class Terminal:
         if self.process.exitstatus == 0 and self.auto_close:
             self.view.run_command("terminus_close")
 
+        if not self.auto_close:
+            # to avoid being reactivated
+            self.view.settings().set("terminus_view.closed", True)
+
     def handle_resize(self):
         size = view_size(self.view)
         logger.debug("handle resize {} {} -> {} {}".format(
@@ -250,6 +255,7 @@ class Terminal:
     @title.setter
     def title(self, value):
         if not self.detached:
+            value = value if value else self.config_name
             self._title = value
             self.view.set_name(value)
 
