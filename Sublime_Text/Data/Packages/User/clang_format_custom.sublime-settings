@@ -72,7 +72,7 @@
  "AllowShortBlocksOnASingleLine": false,
 
     // If true, short case labels will be contracted to a single line.
- "AllowShortCaseLabelsOnASingleLine": false,
+ "AllowShortCaseLabelsOnASingleLine": true,
 
     // Dependent on the value, int f() { return 0; } can be put on a single
     // line.
@@ -84,7 +84,7 @@
     //     inside a class.
     //     SFS_All    (in "configuration": All) Merge all functions fitting on a
     //     single line.
- "AllowShortFunctionsOnASingleLine": "Inline",
+ "AllowShortFunctionsOnASingleLine": "All",
 
     // If true, if (a) return; can be put on a single line.
  "AllowShortIfStatementsOnASingleLine": false,
