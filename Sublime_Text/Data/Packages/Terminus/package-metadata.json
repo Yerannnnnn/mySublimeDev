@@ -1,1 +1,1 @@
-{"description": "Best Terminal Emulator of Sublime Text.", "platforms": ["*"], "sublime_text": ">=3160", "url": "https://packagecontrol.io/packages/Terminus", "version": "0.2.30", "dependencies": []}
+{"platforms": ["*"], "dependencies": [], "description": "Best Terminal Emulator of Sublime Text.", "url": "https://packagecontrol.io/packages/Terminus", "version": "0.2.31", "sublime_text": ">=3160"}

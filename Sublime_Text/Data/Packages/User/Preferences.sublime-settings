@@ -140,7 +140,7 @@
 		"subpixel_antialias",
 		"no_italic"
 	],
-	"font_size": 14,
+	"font_size": 16,
 	"gpu_window_buffer": true,
 	"highlight_line": false,
 	"hot_exit": true,
