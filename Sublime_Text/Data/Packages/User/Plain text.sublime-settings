@@ -10,4 +10,5 @@
         "antialias",
         "subpixel_antialias"
     ],
+    "default_encoding": "UTF-8 with BOM",
 }
