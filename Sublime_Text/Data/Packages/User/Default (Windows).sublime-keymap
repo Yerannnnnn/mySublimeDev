@@ -5,6 +5,7 @@
     { "keys":["ctrl+shift+q" ],"command":"jump_back"                   } ,
     { "keys":["ctrl+alt+p"   ],"command":"prompt_select_workspace" } ,
     { "keys":["ctrl+alt+a"   ],"command": "cmake_format" },
+    { "keys":["ctrl+alt+q"   ],"command": "clang_format" },
     {"keys": ["alt+m"        ], "command": "display_diagrams"},
     //AlignTab
     {"keys":["ctrl+alt+3"   ],"command":"align_tab","args" : {"user_input" : "#"               }},

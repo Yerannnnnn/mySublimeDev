@@ -101,6 +101,7 @@
 	],
 	"color_inactive_tabs": false,
 	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"ensure_newline_at_eof_on_save": true,
