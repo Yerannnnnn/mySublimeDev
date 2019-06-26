@@ -36,7 +36,6 @@
 	"Seti_no_heading": true,
 	"Seti_no_scroll_icons": false,
 	"Seti_no_under_bar": false,
-	"remove_orphaned": false,
 	"Seti_pad_3": false,
 	"Seti_pad_5": false,
 	"Seti_panel_nrml": true,
@@ -157,6 +156,7 @@
 	"live_mode": "false",
 	"mouse_wheel_tabswitch": false,
 	"non_blocking": "true",
+	"remove_orphaned": false,
 	"rulers":
 	[
 	],
