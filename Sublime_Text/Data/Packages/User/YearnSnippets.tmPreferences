@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Globals</string>
+	<key>scope</key>
+	<string></string>
+	<key>settings</key>
+	<dict>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_COPYRIGHT_YERAN</string>
+				<key>value</key>
+				<string>2019</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>TM_AUTHOR</string>
+				<key>value</key>
+				<string>Yeran</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>TM_EMAIL</string>
+				<key>value</key>
+				<string>yuanjiuzheng@foxmail.com</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>TM_TIMESTAMP</string>
+				<key>value</key>
+				<string>2019-06-26 05:43:32 UTC</string>
+			</dict>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>54fbf5e8-97d5-11e9-b48c-54bf641356d3</string>
+</dict>
+</plist>

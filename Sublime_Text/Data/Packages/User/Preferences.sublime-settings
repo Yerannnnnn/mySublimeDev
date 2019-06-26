@@ -36,6 +36,7 @@
 	"Seti_no_heading": true,
 	"Seti_no_scroll_icons": false,
 	"Seti_no_under_bar": false,
+	"remove_orphaned": false,
 	"Seti_pad_3": false,
 	"Seti_pad_5": false,
 	"Seti_panel_nrml": true,
@@ -141,7 +142,7 @@
 		"subpixel_antialias",
 		"no_italic"
 	],
-	"font_size": 12,
+	"font_size": 13,
 	"gpu_window_buffer": true,
 	"highlight_line": false,
 	"hot_exit": true,

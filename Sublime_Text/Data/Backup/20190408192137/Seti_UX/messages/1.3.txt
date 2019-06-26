@@ -1,5 +1,0 @@
-v1.3 (11-12-2014)
--------------------
-
-1. changed caret color.
-2. more scopes for php.

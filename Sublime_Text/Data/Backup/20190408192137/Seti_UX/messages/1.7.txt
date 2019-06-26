@@ -1,4 +1,0 @@
-v1.7 (31-1-2015)
--------------------
-
-1. fixed script src color + a couple more.
