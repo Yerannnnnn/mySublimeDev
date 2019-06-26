@@ -147,6 +147,7 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"C++ Snippets",
 		"CUDA C++",
 		"hextoASCII",
 		"Markdown",

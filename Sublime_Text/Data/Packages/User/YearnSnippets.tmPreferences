@@ -24,19 +24,13 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>TM_EMAIL</string>
-				<key>value</key>
-				<string>yuanjiuzheng@foxmail.com</string>
-			</dict>
-			<dict>
-				<key>name</key>
 				<string>TM_TIMESTAMP</string>
 				<key>value</key>
-				<string>2019-06-26 05:50:11 UTC</string>
+				<string>2019-06-26 05:55:52 UTC</string>
 			</dict>
 		</array>
 	</dict>
 	<key>uuid</key>
-	<string>42d65a4c-97d6-11e9-ac60-54bf641356d3</string>
+	<string>0e551c94-97d7-11e9-85ea-54bf641356d3</string>
 </dict>
 </plist>

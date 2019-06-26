@@ -11,7 +11,6 @@ def update_snippets_consts():
     settings = sublime.load_settings('YearnSnippets.sublime-settings')
     copyright_yera = datetime.utcnow().strftime("%Y")
     author = settings.get("author")
-    email = settings.get("email")
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 
     preferences = dict(
@@ -22,7 +21,6 @@ def update_snippets_consts():
             shellVariables = [
                 dict (name = 'TM_COPYRIGHT_YERAN',value = copyright_yera),
                 dict (name = 'TM_AUTHOR',value = author),
-                dict (name = 'TM_EMAIL',value = email),
                 dict (name = 'TM_TIMESTAMP',value = timestamp),
             ]
         )
