@@ -7,6 +7,6 @@
     //     WebKit
     //     Custom
     "style": "Custom",
-    "format_on_save": true,
+    "format_on_save": false,
     "languages": ["C", "C++", "C++11", "Objective-C", "Objective-C++"]
 }
