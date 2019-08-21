@@ -486,7 +486,7 @@ class TerminusInitializeCommand(sublime_plugin.TextCommand):
         view_settings.set("auto_complete", False)
         view_settings.set("draw_white_space", "none")
         view_settings.set("draw_indent_guides", False)
-        view_settings.set("caret_style", "blink")
+        # view_settings.set("caret_style", "blink")
         view_settings.set("scroll_past_end", True)
         view_settings.set("color_scheme", "Terminus.sublime-color-scheme")
         # disable bracket highligher (not working)
@@ -498,7 +498,6 @@ class TerminusInitializeCommand(sublime_plugin.TextCommand):
             view_settings.set(key, value)
         # disable vintage
         view_settings.set("command_mode", False)
-        view_settings.set("inverse_caret_state", False)
 
 
 class TerminusActivateCommand(sublime_plugin.TextCommand):
@@ -536,14 +535,18 @@ class TerminusResetCommand(sublime_plugin.TextCommand):
                         window.focus_view(new_view)
                 else:
                     window = view.window()
+                    has_focus = view == window.active_view()
                     layout = window.get_layout()
+                    if not has_focus:
+                        window.focus_view(view)
                     new_view = window.new_file()
                     view.close()
                     new_view.run_command("terminus_initialize")
 
                     def run_attach():
                         window.run_command("set_layout", layout)
-                        window.focus_view(new_view)
+                        if has_focus:
+                            window.focus_view(new_view)
                         terminal.attach_view(new_view)
 
                 sublime.set_timeout_async(run_attach)
