@@ -14,7 +14,7 @@
 				<key>name</key>
 				<string>TM_COPYRIGHT_YERAN</string>
 				<key>value</key>
-				<string>2019</string>
+				<string>2020</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -26,11 +26,11 @@
 				<key>name</key>
 				<string>TM_TIMESTAMP</string>
 				<key>value</key>
-				<string>2019-11-04 03:00:30 UTC</string>
+				<string>2020-01-14 01:21:20 UTC</string>
 			</dict>
 		</array>
 	</dict>
 	<key>uuid</key>
-	<string>4286cf64-feaf-11e9-b098-54bf641356d3</string>
+	<string>2b72d038-366c-11ea-8ba1-54bf641356d3</string>
 </dict>
 </plist>

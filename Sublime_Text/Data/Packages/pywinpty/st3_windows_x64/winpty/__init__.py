@@ -14,5 +14,5 @@ from .winpty_wrapper import PTY
 
 PTY
 PtyProcess
-VERSION_INFO = (0, 5, 4)
+VERSION_INFO = (0, 5, 7)
 __version__ = '.'.join(map(str, VERSION_INFO))

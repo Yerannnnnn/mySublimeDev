@@ -133,7 +133,7 @@
 		"*.mp3"
 	],
 	"folder_no_icon": true,
-	"font_face": "Inconsolata Hybrid",
+	"font_face": "YaHei Consolas Hybrid",
 	"font_options":
 	[
 		"directwrite",
@@ -141,7 +141,7 @@
 		"subpixel_antialias",
 		"no_italic"
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"gpu_window_buffer": true,
 	"highlight_line": false,
 	"hot_exit": true,
@@ -152,6 +152,7 @@
 		"hextoASCII",
 		"Markdown",
 		"MarkdownTOC",
+		"Qt Completions for C++",
 		"Vintage"
 	],
 	"live_mode": "false",
